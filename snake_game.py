@@ -102,3 +102,15 @@ def move():
     
     snake.x += velocityX * TILE_SIZE
     snake.y += velocityY * TILE_SIZE
+
+def draw():
+    global snake, food, snake_body, game_over, score
+    move()
+
+    canvas.delete("all")
+
+    #draw food
+    canvas.create_rectangle(food.x, food.y, food.x + TILE_SIZE, food.y + TILE_SIZE, fill = 'red')
+
+    #draw snake
+    canvas.create_rectangle(snake.x, snake.y, snake.x + TILE_SIZE, snake.y + TILE_SIZE, fill = 'lime green')
