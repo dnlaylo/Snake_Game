@@ -124,3 +124,5 @@ def draw():
         canvas.create_text(30, 20, font = "Arial 10", text = f"Score: {score}", fill = "white")
 
     window.after(100, draw) #call draw again every 100ms (1/10 of a second) = 10 frames per second
+
+draw()
