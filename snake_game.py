@@ -1,3 +1,5 @@
+## PROGRAM BY: https://github.com/ImKennyYip
+
 import tkinter
 import random  
 
